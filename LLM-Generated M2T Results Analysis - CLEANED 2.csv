@@ -1,0 +1,330 @@
+Process Model,LLM Model,Text Type,Prompt,FKGL,FRE,#S,#W,#MR,TS-NC,TS-C,Conflict?,Score,Instruction Following,Correctness,Writing Quality,Source File
+1_2,manual,Golden Description,0,38.39340426,-12.775,2,94,1,,,1,0.0,,,,data/golden_descriptions/1_2.txt
+1_3,manual,Golden Description,0,7.149578313,68.44235944,6,83,0,,,1,0.0,,,,data/golden_descriptions/1_3.txt
+10_1,manual,Golden Description,0,4.485714286,79.52595238,3,28,0,,,1,0.0,,,,data/golden_descriptions/10_1.txt
+10_13,manual,Golden Description,0,6.746578947,63.61355263,2,19,0,,,1,0.0,,,,data/golden_descriptions/10_13.txt
+10_6,manual,Golden Description,0,5.105555556,69.145,3,18,0,,,1,0.0,,,,data/golden_descriptions/10_6.txt
+3_3,manual,Golden Description,0,9.939818182,47.30972727,5,66,0,,,1,0.0,,,,data/golden_descriptions/3_3.txt
+5_2,manual,Golden Description,0,11.85275676,23.26454054,5,37,0,,,1,0.0,,,,data/golden_descriptions/5_2.txt
+Baking,manual,Golden Description,0,5.144104478,78.07098259,5,63,0,,,1,0.0,,,,data/golden_descriptions/Baking.txt
+Cement 1,manual,Golden Description,0,6.966813725,67.82316176,4,51,0,,,1,0.0,,,,data/golden_descriptions/Cement 1.txt
+Cement 2,manual,Golden Description,0,9.115238095,54.64642857,6,82,0,,,1,0.0,,,,data/golden_descriptions/Cement 2.txt
+Cement 3,manual,Golden Description,0,9.197538897,54.81970297,7,99,0,,,1,0.0,,,,data/golden_descriptions/Cement 3.txt
+Chess,manual,Golden Description,0,7.875,58.195,8,88,0,,,1,0.0,,,,data/golden_descriptions/Chess.txt
+Chickpeas,manual,Golden Description,0,1.785263158,93.54350877,3,19,0,,,1,0.0,,,,data/golden_descriptions/Chickpeas.txt
+Diamonds,manual,Golden Description,0,6.759037037,65.83966667,5,55,0,,,1,0.0,,,,data/golden_descriptions/Diamonds.txt
+Experiment Design,manual,Golden Description,0,11.07055592,38.19901897,10,129,0,,,1,0.0,,,,data/golden_descriptions/Experiment Design.txt
+Ice Cream,manual,Golden Description,0,6.621548387,58.63232258,5,31,0,,,1,0.0,,,,data/golden_descriptions/Ice Cream.txt
+Log Inspection 1,manual,Golden Description,0,4.768170426,75.38052632,7,53,0,,,1,0.0,,,,data/golden_descriptions/Log Inspection 1.txt
+Log Inspection 2,manual,Golden Description,0,5.659736842,71.40565789,8,70,0,,,1,0.0,,,,data/golden_descriptions/Log Inspection 2.txt
+Ordering Kiosk 1,manual,Golden Description,0,9.404767932,58.90345288,9,158,0,,,1,0.0,,,,data/golden_descriptions/Ordering Kiosk 1.txt
+Ordering Kiosk 2,manual,Golden Description,0,9.101053381,63.17867378,15,281,0,,,1,0.0,,,,data/golden_descriptions/Ordering Kiosk 2.txt
+Preflop,manual,Golden Description,0,4.936071429,84.60892857,8,113,0,,,1,0.0,,,,data/golden_descriptions/Preflop.txt
+Proofread,manual,Golden Description,0,6.121428571,69.495,7,73,0,,,1,0.0,,,,data/golden_descriptions/Proofread.txt
+Repair Ticket,manual,Golden Description,0,8.298977273,61.47011364,11,159,0,,,1,0.0,,,,data/golden_descriptions/Repair Ticket.txt
+Restaurant,manual,Golden Description,0,12.55313953,43.35668605,4,89,0,,,1,0.0,,,,data/golden_descriptions/Restaurant.txt
+Test,manual,Golden Description,0,6.914230769,57.06826923,2,13,0,,,1,0.0,,,,data/golden_descriptions/Test.txt
+1_2,gpt-4o-mini,LLM-Generated Original,1,10.5559803,43.48585878,22,192,4,0.5406964366,0.9191521379,0,0.80562,3.0,1.0,2.0,data/llm_m2t_output/1_2_gpt-4o-mini_prompt1.txt
+1_2,gpt-4o-mini,LLM-Generated Self-Corrected,2,8.828173554,53.32044215,10,121,2,0.4274116772,0.9603030806,1,0.80044,1.0,2.0,3.0,data/llm_m2t_output/1_2_gpt-4o-mini_prompt2_conflict_fix.txt
+1_2,gpt-4o-mini,LLM-Generated Original,2,8.712,53.61901695,10,119,2,0.4235243108,0.9611573784,1,0.79987,1.0,2.0,3.0,data/llm_m2t_output/1_2_gpt-4o-mini_prompt2.txt
+1_2,gpt-4o-mini,LLM-Generated Self-Corrected,3,9.231470588,54.10995098,12,170,2,0.2294393742,0.8910859945,1,0.69259,3.0,3.0,5.0,data/llm_m2t_output/1_2_gpt-4o-mini_prompt3_conflict_fix.txt
+1_2,gpt-4o-mini,LLM-Generated Original,3,9.231470588,54.10995098,12,170,2,0.2294393742,0.8911350419,1,0.69263,3.0,3.0,5.0,data/llm_m2t_output/1_2_gpt-4o-mini_prompt3.txt
+1_2,llama3.1:8b,LLM-Generated Self-Corrected,1,9.73324279,52.37841549,19,199,3,0.343839585,0.9233551982,1,0.7495,1.0,2.0,2.0,data/llm_m2t_output/1_2_llama3.1-8b_prompt1_conflict_fix.txt
+1_2,llama3.1:8b,LLM-Generated Original,1,8.644962406,57.25473684,21,181,3,0.3847815779,0.9218265817,1,0.76071,3.0,3.0,2.0,data/llm_m2t_output/1_2_llama3.1-8b_prompt1.txt
+1_2,llama3.1:8b,LLM-Generated Self-Corrected,2,10.16948052,50.14136364,7,110,2,0.667028285,0.9722736944,1,0.8807,2.0,4.0,4.0,data/llm_m2t_output/1_2_llama3.1-8b_prompt2_conflict_fix.txt
+1_2,llama3.1:8b,LLM-Generated Original,2,9.420178571,50.90169643,8,105,2,0.6485277035,0.9780616253,1,0.8792,2.0,5.0,5.0,data/llm_m2t_output/1_2_llama3.1-8b_prompt2.txt
+1_2,llama3.1:8b,LLM-Generated Self-Corrected,3,9.868484848,53.45590909,12,180,2,0.3175801511,0.8910623496,1,0.71902,4.0,2.0,2.0,data/llm_m2t_output/1_2_llama3.1-8b_prompt3_conflict_fix.txt
+1_2,llama3.1:8b,LLM-Generated Original,3,7.994321192,60.15960541,12,151,1,0.3041587737,0.9095113517,1,0.72791,4.0,5.0,5.0,data/llm_m2t_output/1_2_llama3.1-8b_prompt3.txt
+1_3,gpt-4o-mini,LLM-Generated Original,1,7.15,66.81807692,18,157,0,0.7855855612,0.9240821675,0,0.88253,2.0,1.0,3.0,data/llm_m2t_output/1_3_gpt-4o-mini_prompt1.txt
+1_3,gpt-4o-mini,LLM-Generated Self-Corrected,2,9.713333333,61.045,6,120,0,0.8155795114,0.9873647509,1,0.93583,1.0,2.0,1.0,data/llm_m2t_output/1_3_gpt-4o-mini_prompt2_conflict_fix.txt
+1_3,gpt-4o-mini,LLM-Generated Original,2,8.568447205,62.89217391,7,115,0,0.8222313631,0.9871840196,1,0.9377,1.0,1.0,1.0,data/llm_m2t_output/1_3_gpt-4o-mini_prompt2.txt
+1_3,gpt-4o-mini,LLM-Generated Original,3,6.185274725,67.25615385,14,130,0,0.7522146759,0.9664210956,0,0.90216,1.0,2.0,2.0,data/llm_m2t_output/1_3_gpt-4o-mini_prompt3.txt
+1_3,llama3.1:8b,LLM-Generated Self-Corrected,1,8.725967742,60.10895161,24,203,0,0.7110007475,0.9408348581,1,0.87188,2.0,1.0,3.0,data/llm_m2t_output/1_3_llama3.1-8b_prompt1_conflict_fix.txt
+1_3,llama3.1:8b,LLM-Generated Original,1,9.057357466,56.36754449,26,209,0,0.7654660845,0.8952882985,1,0.85634,2.0,2.0,3.0,data/llm_m2t_output/1_3_llama3.1-8b_prompt1.txt
+1_3,llama3.1:8b,LLM-Generated Self-Corrected,2,9.286708075,57.7426087,7,115,0,0.6210787324,0.9563458802,1,0.85577,1.0,2.0,1.0,data/llm_m2t_output/1_3_llama3.1-8b_prompt2_conflict_fix.txt
+1_3,llama3.1:8b,LLM-Generated Original,2,8.548306333,58.45659794,7,97,0,0.6212063126,0.9584494535,1,0.85728,1.0,1.0,2.0,data/llm_m2t_output/1_3_llama3.1-8b_prompt2.txt
+1_3,llama3.1:8b,LLM-Generated Self-Corrected,3,10.44,52.86666667,13,219,0,0.4682129847,0.90271212,1,0.77236,3.0,2.0,5.0,data/llm_m2t_output/1_3_llama3.1-8b_prompt3_conflict_fix.txt
+1_3,llama3.1:8b,LLM-Generated Original,3,7.500764706,65.50894118,10,136,0,0.5021278404,0.9418766175,1,0.80995,3.0,2.0,5.0,data/llm_m2t_output/1_3_llama3.1-8b_prompt3.txt
+10_1,gpt-4o-mini,LLM-Generated Self-Corrected,1,6.723850932,64.4126087,11,64,0,0.5784979503,0.9492794611,1,0.83805,2.0,1.0,2.0,data/llm_m2t_output/10_1_gpt-4o-mini_prompt1_conflict_fix.txt
+10_1,gpt-4o-mini,LLM-Generated Original,1,7.623333333,60.19722222,13,93,0,0.6491758364,0.8662550124,1,0.80113,2.0,2.0,3.0,data/llm_m2t_output/10_1_gpt-4o-mini_prompt1.txt
+10_1,gpt-4o-mini,LLM-Generated Self-Corrected,2,10.29112319,52.00451087,4,69,0,0.6305831223,0.9687225257,1,0.86728,1.0,3.0,4.0,data/llm_m2t_output/10_1_gpt-4o-mini_prompt2_conflict_fix.txt
+10_1,gpt-4o-mini,LLM-Generated Original,2,8.904615385,54.37538462,5,65,0,0.6637593655,0.972258762,1,0.87971,1.0,4.0,3.0,data/llm_m2t_output/10_1_gpt-4o-mini_prompt2.txt
+10_1,gpt-4o-mini,LLM-Generated Original,3,6.75204918,64.76173497,6,59,0,0.5352760769,0.9536031903,0,0.82811,3.0,2.0,4.0,data/llm_m2t_output/10_1_gpt-4o-mini_prompt3.txt
+10_1,llama3.1:8b,LLM-Generated Self-Corrected,1,5.957539683,70.67,10,68,0,0.4929706174,0.9000718707,1,0.77794,2.0,3.0,3.0,data/llm_m2t_output/10_1_llama3.1-8b_prompt1_conflict_fix.txt
+10_1,llama3.1:8b,LLM-Generated Original,1,8.162789116,55.93379819,11,91,0,0.4451932676,0.8526612386,1,0.73042,2.0,3.0,4.0,data/llm_m2t_output/10_1_llama3.1-8b_prompt1.txt
+10_1,llama3.1:8b,LLM-Generated Self-Corrected,2,10.44357143,53.4347619,6,112,0,0.7206527367,0.9148702167,1,0.8566,3.0,5.0,4.0,data/llm_m2t_output/10_1_llama3.1-8b_prompt2_conflict_fix.txt
+10_1,llama3.1:8b,LLM-Generated Original,2,7.351606557,64.08478689,5,61,0,0.7295949894,0.9616950187,1,0.89207,1.0,5.0,3.0,data/llm_m2t_output/10_1_llama3.1-8b_prompt2.txt
+10_1,llama3.1:8b,LLM-Generated Self-Corrected,3,7.108043478,64.58423913,4,46,0,0.6877761525,0.9656872063,1,0.88231,4.0,1.0,1.0,data/llm_m2t_output/10_1_llama3.1-8b_prompt3_conflict_fix.txt
+10_1,llama3.1:8b,LLM-Generated Original,3,6.537777778,64.22,5,45,0,0.6762884084,0.9642855654,1,0.87789,3.0,1.0,2.0,data/llm_m2t_output/10_1_llama3.1-8b_prompt3.txt
+10_13,gpt-4o-mini,LLM-Generated Original,1,5.258307692,75.88669231,9,48,0,0.5649188319,0.9524996291,0,0.83623,2.0,1.0,2.0,data/llm_m2t_output/10_13_gpt-4o-mini_prompt1.txt
+10_13,gpt-4o-mini,LLM-Generated Original,2,6.931111111,61.4,4,36,0,0.6211450119,0.9695019064,0,0.86499,1.0,1.0,1.0,data/llm_m2t_output/10_13_gpt-4o-mini_prompt2.txt
+10_13,gpt-4o-mini,LLM-Generated Original,3,6.042727273,64.80075758,3,22,0,0.7988220846,0.9809715334,0,0.92633,1.0,1.0,1.0,data/llm_m2t_output/10_13_gpt-4o-mini_prompt3.txt
+10_13,llama3.1:8b,LLM-Generated Self-Corrected,1,8.917873563,56.95198276,8,83,0,0.3807321904,0.9054006468,1,0.748,2.0,1.0,2.0,data/llm_m2t_output/10_13_llama3.1-8b_prompt1_conflict_fix.txt
+10_13,llama3.1:8b,LLM-Generated Original,1,8.666492537,52.81725124,7,63,0,0.4242548698,0.8190134195,1,0.70059,2.0,1.0,2.0,data/llm_m2t_output/10_13_llama3.1-8b_prompt1.txt
+10_13,llama3.1:8b,LLM-Generated Self-Corrected,2,9.231071429,44.46517857,8,70,0,0.3961921109,0.8994907407,1,0.7485,3.0,5.0,2.0,data/llm_m2t_output/10_13_llama3.1-8b_prompt2_conflict_fix.txt
+10_13,llama3.1:8b,LLM-Generated Original,2,6.458571429,57.0697619,3,14,0,0.8978765997,0.9647200445,1,0.94467,2.0,1.0,2.0,data/llm_m2t_output/10_13_llama3.1-8b_prompt2.txt
+10_13,llama3.1:8b,LLM-Generated Self-Corrected,3,5.803783784,75.41936937,3,37,0,0.3242578534,0.8980352169,1,0.7259,2.0,1.0,2.0,data/llm_m2t_output/10_13_llama3.1-8b_prompt3_conflict_fix.txt
+10_13,llama3.1:8b,LLM-Generated Original,3,7.83,65.04833333,4,44,0,0.3836442099,0.8957070274,1,0.74209,3.0,1.0,3.0,data/llm_m2t_output/10_13_llama3.1-8b_prompt3.txt
+10_6,gpt-4o-mini,LLM-Generated Original,1,8.637,55.4035,14,118,0,0.3784516218,0.8328066869,0,0.6965,2.0,4.0,4.0,data/llm_m2t_output/10_6_gpt-4o-mini_prompt1.txt
+10_6,gpt-4o-mini,LLM-Generated Self-Corrected,2,8.7,49.31166667,6,56,0,0.5397414703,0.9616003582,1,0.83504,2.0,1.0,2.0,data/llm_m2t_output/10_6_gpt-4o-mini_prompt2_conflict_fix.txt
+10_6,gpt-4o-mini,LLM-Generated Original,2,7.586666667,56.7,6,54,0,0.5218159299,0.9590878471,1,0.82791,1.0,1.0,2.0,data/llm_m2t_output/10_6_gpt-4o-mini_prompt2.txt
+10_6,gpt-4o-mini,LLM-Generated Original,3,6.746578947,63.61355263,6,57,0,0.5192205423,0.9221359281,0,0.80126,3.0,1.0,3.0,data/llm_m2t_output/10_6_gpt-4o-mini_prompt3.txt
+10_6,llama3.1:8b,LLM-Generated Self-Corrected,1,10.45364146,46.06852941,11,96,0,0.5618651715,0.9224774344,1,0.81429,2.0,1.0,3.0,data/llm_m2t_output/10_6_llama3.1-8b_prompt1_conflict_fix.txt
+10_6,llama3.1:8b,LLM-Generated Original,1,9.536666667,51.625,10,80,0,0.5218501637,0.9112962094,1,0.79446,2.0,3.0,4.0,data/llm_m2t_output/10_6_llama3.1-8b_prompt1.txt
+10_6,llama3.1:8b,LLM-Generated Self-Corrected,2,8.619813953,48.5804186,5,43,0,0.6831054987,0.9555108249,1,0.87379,1.0,4.0,1.0,data/llm_m2t_output/10_6_llama3.1-8b_prompt2_conflict_fix.txt
+10_6,llama3.1:8b,LLM-Generated Original,2,8.575478723,54.50875,4,47,0,0.7625221316,0.9592270932,1,0.90022,1.0,5.0,4.0,data/llm_m2t_output/10_6_llama3.1-8b_prompt2.txt
+10_6,llama3.1:8b,LLM-Generated Original,3,7.822287234,59.90875,4,47,0,0.5145793567,0.9409536625,0,0.81304,2.0,3.0,4.0,data/llm_m2t_output/10_6_llama3.1-8b_prompt3.txt
+3_3,gpt-4o-mini,LLM-Generated Original,1,8.823084416,54.19659091,20,166,0,0.6476505484,0.8838737066,0,0.81301,3.0,3.0,3.0,data/llm_m2t_output/3_3_gpt-4o-mini_prompt1.txt
+3_3,gpt-4o-mini,LLM-Generated Self-Corrected,2,10.41464286,45.33035714,8,112,0,0.6247331231,0.9719783124,1,0.8678,1.0,2.0,1.0,data/llm_m2t_output/3_3_gpt-4o-mini_prompt2_conflict_fix.txt
+3_3,gpt-4o-mini,LLM-Generated Original,2,8.728039216,52.67284314,9,102,0,0.6595112259,0.9721275978,1,0.87834,1.0,2.0,1.0,data/llm_m2t_output/3_3_gpt-4o-mini_prompt2.txt
+3_3,gpt-4o-mini,LLM-Generated Self-Corrected,3,10.15142857,48.99857143,7,105,0,0.7390540425,0.97133086,1,0.90165,1.0,4.0,4.0,data/llm_m2t_output/3_3_gpt-4o-mini_prompt3_conflict_fix.txt
+3_3,gpt-4o-mini,LLM-Generated Original,3,7.409549451,58.14795055,10,91,0,0.7495844798,0.9707981271,1,0.90443,1.0,2.0,2.0,data/llm_m2t_output/3_3_gpt-4o-mini_prompt3.txt
+3_3,llama3.1:8b,LLM-Generated Self-Corrected,1,11.35205015,47.21828171,22,317,0,0.6313052436,0.8964841457,1,0.81693,4.0,3.0,5.0,data/llm_m2t_output/3_3_llama3.1-8b_prompt1_conflict_fix.txt
+3_3,llama3.1:8b,LLM-Generated Original,1,10.64672414,50.5168435,15,218,0,0.6737030798,0.9050190752,1,0.83562,4.0,3.0,4.0,data/llm_m2t_output/3_3_llama3.1-8b_prompt1.txt
+3_3,llama3.1:8b,LLM-Generated Self-Corrected,2,15.62168449,38.57409537,6,183,0,0.5759329463,0.9410717339,1,0.83153,3.0,1.0,1.0,data/llm_m2t_output/3_3_llama3.1-8b_prompt2_conflict_fix.txt
+3_3,llama3.1:8b,LLM-Generated Original,2,10.32736842,54.86157895,5,95,0,0.7755971975,0.9806834818,1,0.91916,1.0,2.0,1.0,data/llm_m2t_output/3_3_llama3.1-8b_prompt2.txt
+3_3,llama3.1:8b,LLM-Generated Self-Corrected,3,10.98903846,45.21971154,8,130,0,0.5409922993,0.9126138668,1,0.80113,2.0,4.0,4.0,data/llm_m2t_output/3_3_llama3.1-8b_prompt3_conflict_fix.txt
+3_3,llama3.1:8b,LLM-Generated Original,3,7.217230444,57.2437315,11,84,0,0.6830734954,0.9355922973,1,0.85984,3.0,3.0,3.0,data/llm_m2t_output/3_3_llama3.1-8b_prompt3.txt
+5_2,gpt-4o-mini,LLM-Generated Original,1,9.032782609,46.68830435,16,83,0,0.5447726106,0.9027246333,0,0.79534,2.0,1.0,2.0,data/llm_m2t_output/5_2_gpt-4o-mini_prompt1.txt
+5_2,gpt-4o-mini,LLM-Generated Original,2,9.861030445,39.88508197,7,61,0,0.6471436471,0.9827322272,0,0.88206,1.0,1.0,1.0,data/llm_m2t_output/5_2_gpt-4o-mini_prompt2.txt
+5_2,gpt-4o-mini,LLM-Generated Original,3,9.756129032,43.52086022,9,93,0,0.4859390881,0.9644526567,0,0.8209,1.0,1.0,2.0,data/llm_m2t_output/5_2_gpt-4o-mini_prompt3.txt
+5_2,llama3.1:8b,LLM-Generated Self-Corrected,1,11.64988345,36.79814685,18,142,0,0.5318774028,0.9348124999,1,0.81393,2.0,1.0,3.0,data/llm_m2t_output/5_2_llama3.1-8b_prompt1_conflict_fix.txt
+5_2,llama3.1:8b,LLM-Generated Original,1,9.792427007,45.19014903,20,127,0,0.4158462941,0.8810046151,1,0.74146,2.0,2.0,3.0,data/llm_m2t_output/5_2_llama3.1-8b_prompt1.txt
+5_2,llama3.1:8b,LLM-Generated Self-Corrected,2,12.04,27.14666667,6,62,0,0.5515694672,0.9861112203,1,0.85575,1.0,1.0,1.0,data/llm_m2t_output/5_2_llama3.1-8b_prompt2_conflict_fix.txt
+5_2,llama3.1:8b,LLM-Generated Original,2,12.54939683,27.53171429,5,63,0,0.5708113534,0.9862683266,1,0.86163,1.0,2.0,3.0,data/llm_m2t_output/5_2_llama3.1-8b_prompt2.txt
+5_2,llama3.1:8b,LLM-Generated Self-Corrected,3,11.38486486,35.40585586,7,74,0,0.6760389285,0.9652604695,1,0.87849,1.0,4.0,2.0,data/llm_m2t_output/5_2_llama3.1-8b_prompt3_conflict_fix.txt
+5_2,llama3.1:8b,LLM-Generated Original,3,9.150561594,44.81975543,8,69,0,0.7283991966,0.9760962243,1,0.90179,3.0,3.0,4.0,data/llm_m2t_output/5_2_llama3.1-8b_prompt3.txt
+Baking,gpt-4o-mini,LLM-Generated Original,1,6.297368421,69.03710526,20,191,0,0.6912625082,0.8734255076,0,0.81878,3.0,2.0,2.0,data/llm_m2t_output/Baking_gpt-4o-mini_prompt1.txt
+Baking,gpt-4o-mini,LLM-Generated Original,2,6.39732254,72.83715442,11,144,0,0.7450598265,0.9861191296,0,0.9138,1.0,1.0,1.0,data/llm_m2t_output/Baking_gpt-4o-mini_prompt2.txt
+Baking,gpt-4o-mini,LLM-Generated Self-Corrected,3,8.66688106,61.04145928,13,217,0,0.3575141578,0.9619574039,1,0.78062,3.0,1.0,4.0,data/llm_m2t_output/Baking_gpt-4o-mini_prompt3_conflict_fix.txt
+Baking,gpt-4o-mini,LLM-Generated Original,3,8.56005148,61.93459459,13,218,0,0.3599374054,0.9596668161,1,0.77975,3.0,1.0,4.0,data/llm_m2t_output/Baking_gpt-4o-mini_prompt3.txt
+Baking,llama3.1:8b,LLM-Generated Self-Corrected,1,5.876398246,74.18222543,40,324,0,0.4965270478,0.9156642208,1,0.78992,3.0,3.0,1.0,data/llm_m2t_output/Baking_llama3.1-8b_prompt1_conflict_fix.txt
+Baking,llama3.1:8b,LLM-Generated Original,1,5.467635669,78.23309682,32,292,0,0.5300155567,0.8832096301,1,0.77725,3.0,3.0,1.0,data/llm_m2t_output/Baking_llama3.1-8b_prompt1.txt
+Baking,llama3.1:8b,LLM-Generated Self-Corrected,2,7.979761905,69.02107143,5,101,0,0.5677186676,0.9763644471,1,0.85377,1.0,3.0,1.0,data/llm_m2t_output/Baking_llama3.1-8b_prompt2_conflict_fix.txt
+Baking,llama3.1:8b,LLM-Generated Original,2,6.875,74.27,5,92,0,0.6454529541,0.9878585025,1,0.88514,1.0,3.0,1.0,data/llm_m2t_output/Baking_llama3.1-8b_prompt2.txt
+Baking,llama3.1:8b,LLM-Generated Self-Corrected,3,8.093362604,68.47764939,23,392,0,0.3132487069,0.8530315455,1,0.6911,3.0,1.0,1.0,data/llm_m2t_output/Baking_llama3.1-8b_prompt3_conflict_fix.txt
+Baking,llama3.1:8b,LLM-Generated Original,3,6.954819672,74.17269399,14,240,0,0.2871120011,0.8722278787,1,0.69669,3.0,1.0,1.0,data/llm_m2t_output/Baking_llama3.1-8b_prompt3.txt
+Cement 1,gpt-4o-mini,LLM-Generated Original,1,7.437673203,59.90552941,21,140,0,0.7575915419,0.9078237728,0,0.86275,3.0,1.0,2.0,data/llm_m2t_output/Cement_1_gpt-4o-mini_prompt1.txt
+Cement 1,gpt-4o-mini,LLM-Generated Original,2,7.532616372,63.70303371,7,89,0,0.4360241804,0.9793629365,0,0.81636,1.0,1.0,1.0,data/llm_m2t_output/Cement_1_gpt-4o-mini_prompt2.txt
+Cement 1,gpt-4o-mini,LLM-Generated Original,3,7.371538462,60.02346154,13,130,0,0.3207019717,0.9603905155,0,0.76848,3.0,1.0,1.0,data/llm_m2t_output/Cement_1_gpt-4o-mini_prompt3.txt
+Cement 1,llama3.1:8b,LLM-Generated Self-Corrected,1,9.559267606,51.8191831,11,140,0,0.467052591,0.9400855668,0,0.79818,2.0,2.0,2.0,data/llm_m2t_output/Cement_1_llama3.1-8b_prompt1_conflict_fix.txt
+Cement 1,llama3.1:8b,LLM-Generated Original,1,9.725227273,49.82784091,13,162,0,0.4903612373,0.9170269252,1,0.78903,2.0,2.0,2.0,data/llm_m2t_output/Cement_1_llama3.1-8b_prompt1.txt
+Cement 1,llama3.1:8b,LLM-Generated Self-Corrected,2,9.629402597,54.36041558,11,171,0,0.3706764265,0.935297029,1,0.76591,1.0,1.0,1.0,data/llm_m2t_output/Cement_1_llama3.1-8b_prompt2_conflict_fix.txt
+Cement 1,llama3.1:8b,LLM-Generated Original,2,9.081609756,59.16217073,5,82,0,0.3790069075,0.9788714083,1,0.79891,1.0,1.0,1.0,data/llm_m2t_output/Cement_1_llama3.1-8b_prompt2.txt
+Cement 1,llama3.1:8b,LLM-Generated Original,3,6.80969697,68.84685315,13,164,0,0.3097423029,0.9230124741,0,0.73903,3.0,1.0,3.0,data/llm_m2t_output/Cement_1_llama3.1-8b_prompt3.txt
+Cement 2,gpt-4o-mini,LLM-Generated Original,1,7.681094008,62.41401594,26,199,0,0.6579375829,0.923036347,0,0.84351,3.0,3.0,1.0,data/llm_m2t_output/Cement_2_gpt-4o-mini_prompt1.txt
+Cement 2,gpt-4o-mini,LLM-Generated Self-Corrected,2,9.702879195,52.03633221,10,147,0,0.5366447485,0.9787615244,1,0.84613,1.0,2.0,1.0,data/llm_m2t_output/Cement_2_gpt-4o-mini_prompt2_conflict_fix.txt
+Cement 2,gpt-4o-mini,LLM-Generated Original,2,9.424285714,52.43071429,10,138,0,0.5313653844,0.9802688684,1,0.8456,1.0,2.0,1.0,data/llm_m2t_output/Cement_2_gpt-4o-mini_prompt2.txt
+Cement 2,gpt-4o-mini,LLM-Generated Self-Corrected,3,7.391418182,62.30970909,22,247,0,0.2886476934,0.8693862714,1,0.69516,3.0,1.0,4.0,data/llm_m2t_output/Cement_2_gpt-4o-mini_prompt3_conflict_fix.txt
+Cement 2,gpt-4o-mini,LLM-Generated Original,3,7.391418182,62.30970909,22,247,0,0.2886476934,0.8693862714,1,0.69516,3.0,1.0,4.0,data/llm_m2t_output/Cement_2_gpt-4o-mini_prompt3.txt
+Cement 2,llama3.1:8b,LLM-Generated Self-Corrected,1,9.439082278,62.56596519,16,297,0,0.57642372,0.9633779703,1,0.84729,4.0,2.0,2.0,data/llm_m2t_output/Cement_2_llama3.1-8b_prompt1_conflict_fix.txt
+Cement 2,llama3.1:8b,LLM-Generated Original,1,9.580784314,60.01630719,17,321,0,0.5973483524,0.9267455413,1,0.82793,4.0,3.0,3.0,data/llm_m2t_output/Cement_2_llama3.1-8b_prompt1.txt
+Cement 2,llama3.1:8b,LLM-Generated Self-Corrected,2,12.30304918,50.31490164,5,120,0,0.7879029787,0.9560349094,1,0.9056,1.0,2.0,1.0,data/llm_m2t_output/Cement_2_llama3.1-8b_prompt2_conflict_fix.txt
+Cement 2,llama3.1:8b,LLM-Generated Original,2,9.579089109,62.36368317,5,99,0,0.8174379952,0.9862017156,1,0.93557,1.0,1.0,1.0,data/llm_m2t_output/Cement_2_llama3.1-8b_prompt2.txt
+Cement 2,llama3.1:8b,LLM-Generated Self-Corrected,3,9.026051282,58.13561538,10,154,0,0.6422501616,0.9718852926,0,0.87299,2.0,2.0,3.0,data/llm_m2t_output/Cement_2_llama3.1-8b_prompt3_conflict_fix.txt
+Cement 2,llama3.1:8b,LLM-Generated Original,3,8.404035461,59.9235,10,139,0,0.6765870744,0.9854613337,1,0.8928,1.0,3.0,1.0,data/llm_m2t_output/Cement_2_llama3.1-8b_prompt3.txt
+Cement 3,gpt-4o-mini,LLM-Generated Original,1,7.689899749,59.26763158,26,212,0,0.6623913697,0.8802868153,0,0.81492,3.0,3.0,1.0,data/llm_m2t_output/Cement_3_gpt-4o-mini_prompt1.txt
+Cement 3,gpt-4o-mini,LLM-Generated Self-Corrected,2,8.380476879,60.65641859,12,170,0,0.662542683,0.9782890682,1,0.88357,1.0,1.0,1.0,data/llm_m2t_output/Cement_3_gpt-4o-mini_prompt2_conflict_fix.txt
+Cement 3,gpt-4o-mini,LLM-Generated Original,2,8.380476879,60.65641859,12,170,0,0.6701601735,0.9791004797,1,0.88642,1.0,1.0,1.0,data/llm_m2t_output/Cement_3_gpt-4o-mini_prompt2.txt
+Cement 3,gpt-4o-mini,LLM-Generated Self-Corrected,3,7.12693956,64.63959615,28,314,0,0.3171149681,0.8555625131,1,0.69403,2.0,1.0,3.0,data/llm_m2t_output/Cement_3_gpt-4o-mini_prompt3_conflict_fix.txt
+Cement 3,gpt-4o-mini,LLM-Generated Original,3,7.12693956,64.63959615,28,314,0,0.3171149681,0.8555943592,1,0.69405,2.0,1.0,3.0,data/llm_m2t_output/Cement_3_gpt-4o-mini_prompt3.txt
+Cement 3,llama3.1:8b,LLM-Generated Self-Corrected,1,8.491600985,60.00814039,21,195,0,0.7167892572,0.9615624141,1,0.88813,3.0,3.0,1.0,data/llm_m2t_output/Cement_3_llama3.1-8b_prompt1_conflict_fix.txt
+Cement 3,llama3.1:8b,LLM-Generated Original,1,8.792182573,60.64351591,26,232,0,0.6796822775,0.961498652,1,0.87695,3.0,3.0,1.0,data/llm_m2t_output/Cement_3_llama3.1-8b_prompt1.txt
+Cement 3,llama3.1:8b,LLM-Generated Self-Corrected,2,10.03122412,55.85135464,11,200,0,0.5800028807,0.9681935975,0,0.85174,2.0,2.0,1.0,data/llm_m2t_output/Cement_3_llama3.1-8b_prompt2_conflict_fix.txt
+Cement 3,llama3.1:8b,LLM-Generated Original,2,10.82678142,50.03427049,10,183,0,0.5595565635,0.9667063756,1,0.84456,1.0,2.0,1.0,data/llm_m2t_output/Cement_3_llama3.1-8b_prompt2.txt
+Cement 3,llama3.1:8b,LLM-Generated Self-Corrected,3,8.645833333,61.12875,21,305,0,0.3111924075,0.8688818532,1,0.70158,2.0,4.0,2.0,data/llm_m2t_output/Cement_3_llama3.1-8b_prompt3_conflict_fix.txt
+Cement 3,llama3.1:8b,LLM-Generated Original,3,6.914577039,68.16342029,26,311,0,0.2983787317,0.8228324444,1,0.6655,3.0,1.0,3.0,data/llm_m2t_output/Cement_3_llama3.1-8b_prompt3.txt
+Chess,gpt-4o-mini,LLM-Generated Self-Corrected,1,6.335315315,71.60855856,12,215,0,0.7336525123,0.9377608621,1,0.87653,3.0,2.0,1.0,data/llm_m2t_output/Chess_gpt-4o-mini_prompt1_conflict_fix.txt
+Chess,gpt-4o-mini,LLM-Generated Original,1,5.703409364,74.70713685,10,190,0,0.7337556436,0.888690738,1,0.84221,3.0,1.0,1.0,data/llm_m2t_output/Chess_gpt-4o-mini_prompt1.txt
+Chess,gpt-4o-mini,LLM-Generated Original,2,7.092564103,65.58576923,13,156,0,0.7649276363,0.9785477927,0,0.91446,1.0,3.0,1.0,data/llm_m2t_output/Chess_gpt-4o-mini_prompt2.txt
+Chess,gpt-4o-mini,LLM-Generated Original,3,9.158747254,61.06928081,32,537,0,0.2571631657,0.8525162392,0,0.67391,3.0,1.0,5.0,data/llm_m2t_output/Chess_gpt-4o-mini_prompt3.txt
+Chess,llama3.1:8b,LLM-Generated Self-Corrected,1,9.66303433,58.60674419,22,247,0,0.5582268041,0.9027110433,0,0.79937,3.0,1.0,1.0,data/llm_m2t_output/Chess_llama3.1-8b_prompt1_conflict_fix.txt
+Chess,llama3.1:8b,LLM-Generated Original,1,8.694166667,61.2275,19,232,0,0.5158517375,0.8385264125,1,0.74172,3.0,2.0,1.0,data/llm_m2t_output/Chess_llama3.1-8b_prompt1.txt
+Chess,llama3.1:8b,LLM-Generated Self-Corrected,2,12.07528595,42.55253676,8,153,0,0.4092261636,0.9397073618,1,0.78056,1.0,1.0,1.0,data/llm_m2t_output/Chess_llama3.1-8b_prompt2_conflict_fix.txt
+Chess,llama3.1:8b,LLM-Generated Original,2,9.90344697,60.79517045,8,165,0,0.682476798,0.9798227595,1,0.89062,1.0,2.0,1.0,data/llm_m2t_output/Chess_llama3.1-8b_prompt2.txt
+Chess,llama3.1:8b,LLM-Generated Self-Corrected,3,8.333900344,64.10727663,37,546,0,0.1829529424,0.8161614105,1,0.6262,3.0,4.0,5.0,data/llm_m2t_output/Chess_llama3.1-8b_prompt3_conflict_fix.txt
+Chess,llama3.1:8b,LLM-Generated Original,3,8.162261072,64.84309246,36,534,0,0.1841576317,0.8156702056,1,0.62622,3.0,2.0,5.0,data/llm_m2t_output/Chess_llama3.1-8b_prompt3.txt
+Chickpeas,gpt-4o-mini,LLM-Generated Original,1,2.975,84.42,8,41,0,0.3674930505,0.8915231243,0,0.73431,3.0,1.0,1.0,data/llm_m2t_output/Chickpeas_gpt-4o-mini_prompt1.txt
+Chickpeas,gpt-4o-mini,LLM-Generated Self-Corrected,2,2.623555556,89.077,5,36,0,0.5960967925,0.985005943,0,0.86833,1.0,1.0,1.0,data/llm_m2t_output/Chickpeas_gpt-4o-mini_prompt2_conflict_fix.txt
+Chickpeas,gpt-4o-mini,LLM-Generated Original,2,2.648571429,88.54142857,5,35,0,0.5960967925,0.9849814598,1,0.86832,1.0,1.0,1.0,data/llm_m2t_output/Chickpeas_gpt-4o-mini_prompt2.txt
+Chickpeas,gpt-4o-mini,LLM-Generated Original,3,4.791136364,75.40670455,4,33,0,0.1908528913,0.9675034324,0,0.73451,1.0,1.0,1.0,data/llm_m2t_output/Chickpeas_gpt-4o-mini_prompt3.txt
+Chickpeas,llama3.1:8b,LLM-Generated Original,1,2.375769231,89.60673077,8,35,0,0.3817512137,0.9462577858,0,0.77691,3.0,1.0,1.0,data/llm_m2t_output/Chickpeas_llama3.1-8b_prompt1.txt
+Chickpeas,llama3.1:8b,LLM-Generated Self-Corrected,2,3.185333333,86.118,5,39,0,0.4837145447,0.9474960576,1,0.80836,1.0,1.0,1.0,data/llm_m2t_output/Chickpeas_llama3.1-8b_prompt2_conflict_fix.txt
+Chickpeas,llama3.1:8b,LLM-Generated Original,2,1.921923077,92.86057692,5,26,0,0.6787551892,0.9863135589,1,0.89405,2.0,1.0,2.0,data/llm_m2t_output/Chickpeas_llama3.1-8b_prompt2.txt
+Chickpeas,llama3.1:8b,LLM-Generated Original,3,1.968,93.777,5,36,0,0.2921656674,0.9108192478,0,0.72522,1.0,1.0,3.0,data/llm_m2t_output/Chickpeas_llama3.1-8b_prompt3.txt
+Diamonds,gpt-4o-mini,LLM-Generated Self-Corrected,1,5.723202443,72.92964369,20,179,0,0.7288868971,0.9288221014,1,0.86884,4.0,2.0,1.0,data/llm_m2t_output/Diamonds_gpt-4o-mini_prompt1_conflict_fix.txt
+Diamonds,gpt-4o-mini,LLM-Generated Original,1,5.690667488,72.341617,23,189,0,0.7159139372,0.8740660976,1,0.82662,4.0,3.0,1.0,data/llm_m2t_output/Diamonds_gpt-4o-mini_prompt1.txt
+Diamonds,gpt-4o-mini,LLM-Generated Original,2,5.299551724,72.56312069,10,88,0,0.7641583949,0.9803972327,0,0.91553,1.0,1.0,1.0,data/llm_m2t_output/Diamonds_gpt-4o-mini_prompt2.txt
+Diamonds,gpt-4o-mini,LLM-Generated Self-Corrected,3,7.028594914,68.66366298,17,218,0,0.2584278045,0.8242429863,1,0.6545,2.0,1.0,5.0,data/llm_m2t_output/Diamonds_gpt-4o-mini_prompt3_conflict_fix.txt
+Diamonds,gpt-4o-mini,LLM-Generated Original,3,7.028594914,68.66366298,17,218,0,0.2584278045,0.8241217978,1,0.65441,2.0,2.0,5.0,data/llm_m2t_output/Diamonds_gpt-4o-mini_prompt3.txt
+Diamonds,llama3.1:8b,LLM-Generated Self-Corrected,1,5.828066378,73.68006494,16,245,0,0.6632079777,0.9541353057,1,0.86686,3.0,4.0,4.0,data/llm_m2t_output/Diamonds_llama3.1-8b_prompt1_conflict_fix.txt
+Diamonds,llama3.1:8b,LLM-Generated Original,1,5.771630075,72.63389624,19,258,0,0.6588971329,0.8986305405,1,0.82671,3.0,4.0,2.0,data/llm_m2t_output/Diamonds_llama3.1-8b_prompt1.txt
+Diamonds,llama3.1:8b,LLM-Generated Self-Corrected,2,9.479412085,54.14042461,11,164,0,0.73292314,0.9326619653,1,0.87274,1.0,5.0,1.0,data/llm_m2t_output/Diamonds_llama3.1-8b_prompt2_conflict_fix.txt
+Diamonds,llama3.1:8b,LLM-Generated Original,2,6.778061947,66.59381858,10,114,0,0.6597679611,0.9316668734,1,0.8501,1.0,5.0,1.0,data/llm_m2t_output/Diamonds_llama3.1-8b_prompt2.txt
+Diamonds,llama3.1:8b,LLM-Generated Self-Corrected,3,9.055459989,57.17994556,12,168,0,0.3447137109,0.8784354269,1,0.71832,3.0,5.0,5.0,data/llm_m2t_output/Diamonds_llama3.1-8b_prompt3_conflict_fix.txt
+Diamonds,llama3.1:8b,LLM-Generated Original,3,7.509795918,66.15663265,14,197,0,0.3414436795,0.8628690458,1,0.70644,3.0,5.0,5.0,data/llm_m2t_output/Diamonds_llama3.1-8b_prompt3.txt
+Experiment Design,gpt-4o-mini,LLM-Generated Self-Corrected,1,12.09739598,37.1378331,27,345,0,0.4720933184,0.9292115106,1,0.79208,4.0,2.0,4.0,data/llm_m2t_output/Experiment_Design_gpt-4o-mini_prompt1_conflict_fix.txt
+Experiment Design,gpt-4o-mini,LLM-Generated Original,1,12.06956522,37.0276087,27,342,0,0.5379810159,0.9455664079,1,0.82329,4.0,3.0,4.0,data/llm_m2t_output/Experiment_Design_gpt-4o-mini_prompt1.txt
+Experiment Design,gpt-4o-mini,LLM-Generated Self-Corrected,2,13.1136809,30.58080611,11,189,0,0.6477701161,0.9725167628,1,0.87509,1.0,1.0,1.0,data/llm_m2t_output/Experiment_Design_gpt-4o-mini_prompt2_conflict_fix.txt
+Experiment Design,gpt-4o-mini,LLM-Generated Original,2,13.59969697,29.61954545,10,188,0,0.6477701161,0.9731173817,1,0.87551,1.0,1.0,1.0,data/llm_m2t_output/Experiment_Design_gpt-4o-mini_prompt2.txt
+Experiment Design,gpt-4o-mini,LLM-Generated Self-Corrected,3,10.35271318,46.36806202,15,248,0,0.6844110021,0.9720531819,0,0.88576,3.0,3.0,2.0,data/llm_m2t_output/Experiment_Design_gpt-4o-mini_prompt3_conflict_fix.txt
+Experiment Design,gpt-4o-mini,LLM-Generated Original,3,10.36432555,46.18585711,15,247,0,0.6884306128,0.9708661738,1,0.88614,3.0,2.0,3.0,data/llm_m2t_output/Experiment_Design_gpt-4o-mini_prompt3.txt
+Experiment Design,llama3.1:8b,LLM-Generated Original,1,12.8170447,25.57531821,22,208,1,0.7822295225,0.942383864,0,0.89434,4.0,2.0,2.0,data/llm_m2t_output/Experiment_Design_llama3.1-8b_prompt1.txt
+Experiment Design,llama3.1:8b,LLM-Generated Self-Corrected,2,10.76507326,36.58409341,24,235,0,0.8435175562,0.9688439079,1,0.93125,3.0,2.0,2.0,data/llm_m2t_output/Experiment_Design_llama3.1-8b_prompt2_conflict_fix.txt
+Experiment Design,llama3.1:8b,LLM-Generated Original,2,15.10731928,23.70868976,6,154,0,0.7391391258,0.9728922817,1,0.90277,3.0,2.0,2.0,data/llm_m2t_output/Experiment_Design_llama3.1-8b_prompt2.txt
+Experiment Design,llama3.1:8b,LLM-Generated Self-Corrected,3,10.24579485,49.732052,24,368,0,0.4131891766,0.909617696,1,0.76069,3.0,5.0,5.0,data/llm_m2t_output/Experiment_Design_llama3.1-8b_prompt3_conflict_fix.txt
+Experiment Design,llama3.1:8b,LLM-Generated Original,3,10.4201629,49.70481588,22,368,0,0.4206924824,0.8984398012,1,0.75512,3.0,5.0,5.0,data/llm_m2t_output/Experiment_Design_llama3.1-8b_prompt3.txt
+Ice Cream,gpt-4o-mini,LLM-Generated Original,1,6.713918539,66.7420014,20,166,0,0.5853744088,0.8897418144,0,0.79843,3.0,2.0,4.0,data/llm_m2t_output/Ice_Cream_gpt-4o-mini_prompt1.txt
+Ice Cream,gpt-4o-mini,LLM-Generated Self-Corrected,2,7.93469697,55.59010101,9,88,0,0.5741265802,0.976721549,1,0.85594,1.0,1.0,1.0,data/llm_m2t_output/Ice_Cream_gpt-4o-mini_prompt2_conflict_fix.txt
+Ice Cream,gpt-4o-mini,LLM-Generated Original,2,6.973134831,60.92060112,10,89,0,0.5203917483,0.9763953388,1,0.83959,1.0,1.0,2.0,data/llm_m2t_output/Ice_Cream_gpt-4o-mini_prompt2.txt
+Ice Cream,gpt-4o-mini,LLM-Generated Self-Corrected,3,7.009191729,64.5508302,12,133,0,0.3073834704,0.8732272633,1,0.70347,3.0,1.0,4.0,data/llm_m2t_output/Ice_Cream_gpt-4o-mini_prompt3_conflict_fix.txt
+Ice Cream,gpt-4o-mini,LLM-Generated Original,3,6.616850394,65.02316778,13,127,0,0.2880069822,0.8795145168,1,0.70206,3.0,1.0,4.0,data/llm_m2t_output/Ice_Cream_gpt-4o-mini_prompt3.txt
+Ice Cream,llama3.1:8b,LLM-Generated Self-Corrected,1,6.378670213,70.25875,21,175,0,0.4405400181,0.9075059178,1,0.76742,4.0,2.0,1.0,data/llm_m2t_output/Ice_Cream_llama3.1-8b_prompt1_conflict_fix.txt
+Ice Cream,llama3.1:8b,LLM-Generated Original,1,5.777853261,71.56069293,19,149,0,0.4534238162,0.8677615184,1,0.74346,4.0,2.0,1.0,data/llm_m2t_output/Ice_Cream_llama3.1-8b_prompt1.txt
+Ice Cream,llama3.1:8b,LLM-Generated Self-Corrected,2,10.63661376,53.15333333,8,135,0,0.548390128,0.9083738172,1,0.80038,3.0,5.0,2.0,data/llm_m2t_output/Ice_Cream_llama3.1-8b_prompt2_conflict_fix.txt
+Ice Cream,llama3.1:8b,LLM-Generated Original,2,10.47553279,47.12018443,4,61,0,0.5349032798,0.9397607744,1,0.8183,3.0,5.0,2.0,data/llm_m2t_output/Ice_Cream_llama3.1-8b_prompt2.txt
+Ice Cream,llama3.1:8b,LLM-Generated Self-Corrected,3,8.225866261,60.005,7,91,0,0.3652710804,0.8945797498,1,0.73579,3.0,2.0,5.0,data/llm_m2t_output/Ice_Cream_llama3.1-8b_prompt3_conflict_fix.txt
+Ice Cream,llama3.1:8b,LLM-Generated Original,3,8.026819307,60.00082302,8,97,0,0.3329027622,0.8940967112,1,0.72574,3.0,3.0,5.0,data/llm_m2t_output/Ice_Cream_llama3.1-8b_prompt3.txt
+Log Inspection 1,gpt-4o-mini,LLM-Generated Original,1,7.425943686,63.92900195,19,194,0,0.5140351961,0.831726918,0,0.73642,4.0,4.0,3.0,data/llm_m2t_output/Log_Inspection_1_gpt-4o-mini_prompt1.txt
+Log Inspection 1,gpt-4o-mini,LLM-Generated Self-Corrected,2,8.432035694,61.00190742,11,159,0,0.3003750478,0.9430473385,1,0.75025,1.0,4.0,1.0,data/llm_m2t_output/Log_Inspection_1_gpt-4o-mini_prompt2_conflict_fix.txt
+Log Inspection 1,gpt-4o-mini,LLM-Generated Original,2,8.490190528,61.23264017,11,163,0,0.2981029933,0.9374905122,1,0.74567,1.0,4.0,1.0,data/llm_m2t_output/Log_Inspection_1_gpt-4o-mini_prompt2.txt
+Log Inspection 1,gpt-4o-mini,LLM-Generated Self-Corrected,3,6.735479204,66.87367089,14,149,0,0.3118768696,0.9033231615,1,0.72589,3.0,3.0,5.0,data/llm_m2t_output/Log_Inspection_1_gpt-4o-mini_prompt3_conflict_fix.txt
+Log Inspection 1,gpt-4o-mini,LLM-Generated Original,3,6.735479204,66.87367089,14,149,0,0.3118768696,0.9030973374,1,0.72573,3.0,3.0,5.0,data/llm_m2t_output/Log_Inspection_1_gpt-4o-mini_prompt3.txt
+Log Inspection 1,llama3.1:8b,LLM-Generated Self-Corrected,1,7.242207792,65.80824675,19,121,0,0.6663115866,0.9380578337,0,0.85653,4.0,4.0,3.0,data/llm_m2t_output/Log_Inspection_1_llama3.1-8b_prompt1_conflict_fix.txt
+Log Inspection 1,llama3.1:8b,LLM-Generated Original,1,7.395862069,61.90419098,22,131,0,0.5492412396,0.8706684524,1,0.77424,4.0,4.0,3.0,data/llm_m2t_output/Log_Inspection_1_llama3.1-8b_prompt1.txt
+Log Inspection 1,llama3.1:8b,LLM-Generated Self-Corrected,2,14.61333333,34.82,6,146,0,0.3508108797,0.8985140817,1,0.7342,3.0,3.0,2.0,data/llm_m2t_output/Log_Inspection_1_llama3.1-8b_prompt2_conflict_fix.txt
+Log Inspection 1,llama3.1:8b,LLM-Generated Original,2,14.75234568,37.38555556,3,79,0,0.3750754334,0.9479473504,1,0.77609,3.0,3.0,2.0,data/llm_m2t_output/Log_Inspection_1_llama3.1-8b_prompt2.txt
+Log Inspection 1,llama3.1:8b,LLM-Generated Self-Corrected,3,7.796553911,67.0152537,11,162,0,0.3100954626,0.8815278554,1,0.7101,3.0,2.0,5.0,data/llm_m2t_output/Log_Inspection_1_llama3.1-8b_prompt3_conflict_fix.txt
+Log Inspection 1,llama3.1:8b,LLM-Generated Original,3,7.782201533,66.14664294,11,156,0,0.3155337707,0.8834945748,1,0.71311,3.0,2.0,5.0,data/llm_m2t_output/Log_Inspection_1_llama3.1-8b_prompt3.txt
+Log Inspection 2,gpt-4o-mini,LLM-Generated Self-Corrected,1,7.872534077,65.2381361,24,242,0,0.6293825218,0.8964202014,1,0.81631,4.0,4.0,3.0,data/llm_m2t_output/Log_Inspection_2_gpt-4o-mini_prompt1_conflict_fix.txt
+Log Inspection 2,gpt-4o-mini,LLM-Generated Original,1,7.406492754,66.54104348,25,249,0,0.5650665064,0.8504640442,1,0.76484,4.0,4.0,3.0,data/llm_m2t_output/Log_Inspection_2_gpt-4o-mini_prompt1.txt
+Log Inspection 2,gpt-4o-mini,LLM-Generated Self-Corrected,2,7.420415842,65.84752145,15,193,0,0.4399139218,0.9403792784,1,0.79024,3.0,4.0,1.0,data/llm_m2t_output/Log_Inspection_2_gpt-4o-mini_prompt2_conflict_fix.txt
+Log Inspection 2,gpt-4o-mini,LLM-Generated Original,2,6.768303167,68.32963801,17,199,0,0.4450421406,0.9381430497,1,0.79021,3.0,4.0,1.0,data/llm_m2t_output/Log_Inspection_2_gpt-4o-mini_prompt2.txt
+Log Inspection 2,gpt-4o-mini,LLM-Generated Self-Corrected,3,9.091583012,58.12378378,14,208,0,0.3821449401,0.9321966674,1,0.76718,3.0,2.0,5.0,data/llm_m2t_output/Log_Inspection_2_gpt-4o-mini_prompt3_conflict_fix.txt
+Log Inspection 2,gpt-4o-mini,LLM-Generated Original,3,9.091583012,58.12378378,14,208,0,0.3821449401,0.9321966674,1,0.76718,3.0,2.0,5.0,data/llm_m2t_output/Log_Inspection_2_gpt-4o-mini_prompt3.txt
+Log Inspection 2,llama3.1:8b,LLM-Generated Self-Corrected,1,7.036669427,65.68117391,35,364,0,0.5247616497,0.8992622232,1,0.78691,4.0,5.0,4.0,data/llm_m2t_output/Log_Inspection_2_llama3.1-8b_prompt1_conflict_fix.txt
+Log Inspection 2,llama3.1:8b,LLM-Generated Original,1,6.66030303,66.41800462,28,310,0,0.5759033308,0.8570894439,1,0.77273,4.0,5.0,3.0,data/llm_m2t_output/Log_Inspection_2_llama3.1-8b_prompt1.txt
+Log Inspection 2,llama3.1:8b,LLM-Generated Self-Corrected,2,10.45603933,59.72765449,8,167,0,0.5499764206,0.8985342255,1,0.79397,1.0,4.0,1.0,data/llm_m2t_output/Log_Inspection_2_llama3.1-8b_prompt2_conflict_fix.txt
+Log Inspection 2,llama3.1:8b,LLM-Generated Original,2,6.737428571,72.203,7,91,0,0.7377558094,0.9744046422,1,0.90341,1.0,4.0,1.0,data/llm_m2t_output/Log_Inspection_2_llama3.1-8b_prompt2.txt
+Log Inspection 2,llama3.1:8b,LLM-Generated Self-Corrected,3,10.58075472,50.67012579,16,257,0,0.3177263349,0.8862623262,1,0.7157,5.0,5.0,2.0,data/llm_m2t_output/Log_Inspection_2_llama3.1-8b_prompt3_conflict_fix.txt
+Log Inspection 2,llama3.1:8b,LLM-Generated Original,3,9.133383978,56.44585866,12,174,0,0.3438691881,0.9031854596,1,0.73539,3.0,2.0,4.0,data/llm_m2t_output/Log_Inspection_2_llama3.1-8b_prompt3.txt
+Ordering Kiosk 1,gpt-4o-mini,LLM-Generated Self-Corrected,1,8.245298673,61.1060896,17,216,0,0.5166930552,0.9251047227,1,0.80258,4.0,3.0,2.0,data/llm_m2t_output/Ordering_Kiosk_1_gpt-4o-mini_prompt1_conflict_fix.txt
+Ordering Kiosk 1,gpt-4o-mini,LLM-Generated Original,1,8.207340153,60.31742967,18,219,0,0.4962241927,0.873712459,1,0.76047,4.0,3.0,2.0,data/llm_m2t_output/Ordering_Kiosk_1_gpt-4o-mini_prompt1.txt
+Ordering Kiosk 1,gpt-4o-mini,LLM-Generated Self-Corrected,2,9.605,59.08153846,13,240,0,0.3664862364,0.939487077,1,0.76759,1.0,1.0,3.0,data/llm_m2t_output/Ordering_Kiosk_1_gpt-4o-mini_prompt2_conflict_fix.txt
+Ordering Kiosk 1,gpt-4o-mini,LLM-Generated Original,2,8.834285714,61.74957627,14,236,0,0.3921280267,0.9372624272,1,0.77372,1.0,1.0,3.0,data/llm_m2t_output/Ordering_Kiosk_1_gpt-4o-mini_prompt2.txt
+Ordering Kiosk 1,gpt-4o-mini,LLM-Generated Self-Corrected,3,8.172510767,60.43842038,35,452,0,0.2310055076,0.8537281892,1,0.66691,3.0,3.0,5.0,data/llm_m2t_output/Ordering_Kiosk_1_gpt-4o-mini_prompt3_conflict_fix.txt
+Ordering Kiosk 1,gpt-4o-mini,LLM-Generated Original,3,8.172510767,60.43842038,35,452,0,0.2310055076,0.8537281892,1,0.66691,3.0,3.0,5.0,data/llm_m2t_output/Ordering_Kiosk_1_gpt-4o-mini_prompt3.txt
+Ordering Kiosk 1,llama3.1:8b,LLM-Generated Self-Corrected,1,9.29,60.791897,21,225,0,0.3107179544,0.9226597065,1,0.73908,3.0,5.0,3.0,data/llm_m2t_output/Ordering_Kiosk_1_llama3.1-8b_prompt1_conflict_fix.txt
+Ordering Kiosk 1,llama3.1:8b,LLM-Generated Original,1,7.298313725,66.96041176,23,194,0,0.4195475922,0.8781827339,1,0.74059,3.0,5.0,3.0,data/llm_m2t_output/Ordering_Kiosk_1_llama3.1-8b_prompt1.txt
+Ordering Kiosk 1,llama3.1:8b,LLM-Generated Self-Corrected,2,9.224393939,58.31659091,9,164,0,0.4527484218,0.9459475287,1,0.79799,3.0,5.0,2.0,data/llm_m2t_output/Ordering_Kiosk_1_llama3.1-8b_prompt2_conflict_fix.txt
+Ordering Kiosk 1,llama3.1:8b,LLM-Generated Original,2,8.25255132,60.99337243,11,153,0,0.4457912471,0.8923344375,1,0.75837,3.0,5.0,2.0,data/llm_m2t_output/Ordering_Kiosk_1_llama3.1-8b_prompt2.txt
+Ordering Kiosk 1,llama3.1:8b,LLM-Generated Original,3,8.282318675,68.05675614,34,588,0,0.2494965794,0.8111897007,0,0.64268,3.0,3.0,5.0,data/llm_m2t_output/Ordering_Kiosk_1_llama3.1-8b_prompt3.txt
+Ordering Kiosk 2,gpt-4o-mini,LLM-Generated Original,1,6.796245059,70.18828063,26,297,0,0.634220476,0.8909622389,0,0.81394,3.0,3.0,5.0,data/llm_m2t_output/Ordering_Kiosk_2_gpt-4o-mini_prompt1.txt
+Ordering Kiosk 2,gpt-4o-mini,LLM-Generated Self-Corrected,2,9.020652174,64.52692029,12,230,0,0.6258598647,0.9639964174,1,0.86256,1.0,3.0,1.0,data/llm_m2t_output/Ordering_Kiosk_2_gpt-4o-mini_prompt2_conflict_fix.txt
+Ordering Kiosk 2,gpt-4o-mini,LLM-Generated Original,2,7.409333333,68.658,15,225,0,0.6312808687,0.9644038635,1,0.86447,1.0,3.0,1.0,data/llm_m2t_output/Ordering_Kiosk_2_gpt-4o-mini_prompt2.txt
+Ordering Kiosk 2,gpt-4o-mini,LLM-Generated Original,3,7.771689189,66.80221847,24,370,0,0.4032992517,0.9305201759,0,0.77235,3.0,1.0,4.0,data/llm_m2t_output/Ordering_Kiosk_2_gpt-4o-mini_prompt3.txt
+Ordering Kiosk 2,llama3.1:8b,LLM-Generated Self-Corrected,1,7.649808651,61.46777457,32,325,0,0.5650605875,0.9175022,1,0.81177,4.0,4.0,3.0,data/llm_m2t_output/Ordering_Kiosk_2_llama3.1-8b_prompt1_conflict_fix.txt
+Ordering Kiosk 2,llama3.1:8b,LLM-Generated Original,1,7.450574713,61.545,33,304,0,0.5813735726,0.8762669064,1,0.7878,4.0,4.0,3.0,data/llm_m2t_output/Ordering_Kiosk_2_llama3.1-8b_prompt1.txt
+Ordering Kiosk 2,llama3.1:8b,LLM-Generated Original,2,7.545630744,70.49308271,19,315,0,0.689025197,0.9629048923,0,0.88074,1.0,4.0,1.0,data/llm_m2t_output/Ordering_Kiosk_2_llama3.1-8b_prompt2.txt
+Ordering Kiosk 2,llama3.1:8b,LLM-Generated Self-Corrected,3,6.549583899,74.53802253,69,964,0,0.229096693,0.8112297777,1,0.63659,3.0,5.0,5.0,data/llm_m2t_output/Ordering_Kiosk_2_llama3.1-8b_prompt3_conflict_fix.txt
+Ordering Kiosk 2,llama3.1:8b,LLM-Generated Original,3,6.508429258,74.51459268,68,939,0,0.2303185722,0.8132278841,1,0.63836,3.0,5.0,5.0,data/llm_m2t_output/Ordering_Kiosk_2_llama3.1-8b_prompt3.txt
+Preflop,gpt-4o-mini,LLM-Generated Original,1,4.931238676,85.26696254,22,278,0,0.4439000118,0.8963520495,0,0.76062,3.0,4.0,3.0,data/llm_m2t_output/Preflop_gpt-4o-mini_prompt1.txt
+Preflop,gpt-4o-mini,LLM-Generated Self-Corrected,2,4.685341615,84.78031056,23,302,0,0.4956024588,0.9572183126,1,0.81873,1.0,1.0,3.0,data/llm_m2t_output/Preflop_gpt-4o-mini_prompt2_conflict_fix.txt
+Preflop,gpt-4o-mini,LLM-Generated Original,2,4.255568918,86.39021739,23,283,0,0.4087452754,0.9568384292,1,0.79241,1.0,3.0,3.0,data/llm_m2t_output/Preflop_gpt-4o-mini_prompt2.txt
+Preflop,gpt-4o-mini,LLM-Generated Self-Corrected,3,10.04830986,61.93157638,13,285,0,0.4355555824,0.9554469045,0,0.79948,3.0,1.0,4.0,data/llm_m2t_output/Preflop_gpt-4o-mini_prompt3_conflict_fix.txt
+Preflop,gpt-4o-mini,LLM-Generated Original,3,5.958709859,72.57502254,25,285,0,0.4355555824,0.95545387,1,0.79948,3.0,1.0,4.0,data/llm_m2t_output/Preflop_gpt-4o-mini_prompt3.txt
+Preflop,llama3.1:8b,LLM-Generated Self-Corrected,1,2.734505495,90.89382784,55,338,0,0.3992865165,0.9057149927,0,0.75379,4.0,4.0,5.0,data/llm_m2t_output/Preflop_llama3.1-8b_prompt1_conflict_fix.txt
+Preflop,llama3.1:8b,LLM-Generated Original,1,5.373660714,85.03383929,49,421,0,0.3642564901,0.8860530536,1,0.72951,4.0,4.0,5.0,data/llm_m2t_output/Preflop_llama3.1-8b_prompt1.txt
+Preflop,llama3.1:8b,LLM-Generated Self-Corrected,2,6.45462069,79.77744828,10,175,0,0.4815269684,0.9379122829,1,0.801,1.0,5.0,2.0,data/llm_m2t_output/Preflop_llama3.1-8b_prompt2_conflict_fix.txt
+Preflop,llama3.1:8b,LLM-Generated Original,2,6.223402235,82.32571788,10,180,0,0.4582654722,0.9317430969,1,0.7897,1.0,5.0,2.0,data/llm_m2t_output/Preflop_llama3.1-8b_prompt2.txt
+Preflop,llama3.1:8b,LLM-Generated Self-Corrected,3,6.103974692,72.053939,47,507,0,0.2709247352,0.8759276976,1,0.69443,3.0,5.0,5.0,data/llm_m2t_output/Preflop_llama3.1-8b_prompt3_conflict_fix.txt
+Preflop,llama3.1:8b,LLM-Generated Original,3,5.396154351,72.44443952,45,386,0,0.2779390886,0.9001353734,1,0.71348,3.0,4.0,5.0,data/llm_m2t_output/Preflop_llama3.1-8b_prompt3.txt
+Proofread,gpt-4o-mini,LLM-Generated Self-Corrected,1,5.173789531,74.63520992,15,125,0,0.6966279861,0.8962851534,1,0.83639,3.0,4.0,2.0,data/llm_m2t_output/Proofread_gpt-4o-mini_prompt1_conflict_fix.txt
+Proofread,gpt-4o-mini,LLM-Generated Original,1,5.572716837,71.47295281,14,140,0,0.6707778249,0.845513098,1,0.79309,3.0,4.0,2.0,data/llm_m2t_output/Proofread_gpt-4o-mini_prompt1.txt
+Proofread,gpt-4o-mini,LLM-Generated Self-Corrected,2,6.633503817,70.83620992,10,132,0,0.6559898443,0.9331399126,1,0.84999,1.0,4.0,1.0,data/llm_m2t_output/Proofread_gpt-4o-mini_prompt2_conflict_fix.txt
+Proofread,gpt-4o-mini,LLM-Generated Original,2,6.585198347,69.40143388,10,122,0,0.6777379703,0.937439086,1,0.85953,1.0,4.0,1.0,data/llm_m2t_output/Proofread_gpt-4o-mini_prompt2.txt
+Proofread,gpt-4o-mini,LLM-Generated Self-Corrected,3,8.380476879,60.65641859,12,174,0,0.3627228308,0.921876803,1,0.75413,3.0,1.0,4.0,data/llm_m2t_output/Proofread_gpt-4o-mini_prompt3_conflict_fix.txt
+Proofread,gpt-4o-mini,LLM-Generated Original,3,8.380476879,60.65641859,12,174,0,0.3627228308,0.9218561785,1,0.75412,3.0,1.0,4.0,data/llm_m2t_output/Proofread_gpt-4o-mini_prompt3.txt
+Proofread,llama3.1:8b,LLM-Generated Self-Corrected,1,7.466931254,67.61642807,30,231,0,0.451792563,0.9027050708,1,0.76743,3.0,4.0,3.0,data/llm_m2t_output/Proofread_llama3.1-8b_prompt1_conflict_fix.txt
+Proofread,llama3.1:8b,LLM-Generated Original,1,6.087216015,69.13245034,29,170,0,0.4845915978,0.8593662815,1,0.74693,3.0,4.0,3.0,data/llm_m2t_output/Proofread_llama3.1-8b_prompt1.txt
+Proofread,llama3.1:8b,LLM-Generated Self-Corrected,2,9.41426087,60.33943478,10,184,0,0.4353317523,0.9361826465,0,0.78593,1.0,4.0,2.0,data/llm_m2t_output/Proofread_llama3.1-8b_prompt2_conflict_fix.txt
+Proofread,llama3.1:8b,LLM-Generated Original,2,8.238949275,66.71755435,8,139,0,0.500994156,0.9730595282,1,0.83144,1.0,4.0,1.0,data/llm_m2t_output/Proofread_llama3.1-8b_prompt2.txt
+Proofread,llama3.1:8b,LLM-Generated Original,3,9.107758621,55.59060345,10,146,0,0.3404952227,0.9432992822,0,0.76246,3.0,1.0,3.0,data/llm_m2t_output/Proofread_llama3.1-8b_prompt3.txt
+Repair Ticket,gpt-4o-mini,LLM-Generated Self-Corrected,1,8.259764012,58.20704031,19,219,0,0.8478474348,0.9416057446,1,0.91348,3.0,4.0,3.0,data/llm_m2t_output/Repair_Ticket_gpt-4o-mini_prompt1_conflict_fix.txt
+Repair Ticket,gpt-4o-mini,LLM-Generated Original,1,8.259764012,58.20704031,19,219,0,0.8478474348,0.9416121299,1,0.91348,3.0,3.0,3.0,data/llm_m2t_output/Repair_Ticket_gpt-4o-mini_prompt1.txt
+Repair Ticket,gpt-4o-mini,LLM-Generated Self-Corrected,2,8.316846934,55.8708619,19,218,0,0.7798178674,0.9815305689,1,0.92102,1.0,5.0,1.0,data/llm_m2t_output/Repair_Ticket_gpt-4o-mini_prompt2_conflict_fix.txt
+Repair Ticket,gpt-4o-mini,LLM-Generated Original,2,8.1784689,56.0192823,19,209,0,0.7945982799,0.9816307259,1,0.92552,1.0,5.0,1.0,data/llm_m2t_output/Repair_Ticket_gpt-4o-mini_prompt2.txt
+Repair Ticket,gpt-4o-mini,LLM-Generated Self-Corrected,3,8.56,55.065,20,240,0,0.7838784408,0.9784813714,1,0.9201,1.0,3.0,1.0,data/llm_m2t_output/Repair_Ticket_gpt-4o-mini_prompt3_conflict_fix.txt
+Repair Ticket,gpt-4o-mini,LLM-Generated Original,3,7.953,57.992,20,224,0,0.7647617504,0.9779339491,1,0.91398,1.0,3.0,1.0,data/llm_m2t_output/Repair_Ticket_gpt-4o-mini_prompt3.txt
+Repair Ticket,llama3.1:8b,LLM-Generated Self-Corrected,1,8.077290715,61.23041603,42,330,0,0.5767665061,0.9326610307,1,0.82589,3.0,5.0,3.0,data/llm_m2t_output/Repair_Ticket_llama3.1-8b_prompt1_conflict_fix.txt
+Repair Ticket,llama3.1:8b,LLM-Generated Original,1,7.616632109,63.94352636,28,198,0,0.7559017961,0.9208822023,1,0.87139,3.0,5.0,3.0,data/llm_m2t_output/Repair_Ticket_llama3.1-8b_prompt1.txt
+Repair Ticket,llama3.1:8b,LLM-Generated Original,2,10.38604271,50.13658501,12,200,0,0.7776088649,0.9718416769,0,0.91357,2.0,5.0,2.0,data/llm_m2t_output/Repair_Ticket_llama3.1-8b_prompt2.txt
+Repair Ticket,llama3.1:8b,LLM-Generated Self-Corrected,3,9.768969709,57.70342572,24,400,0,0.4760820908,0.9070805276,1,0.77778,3.0,3.0,5.0,data/llm_m2t_output/Repair_Ticket_llama3.1-8b_prompt3_conflict_fix.txt
+Repair Ticket,llama3.1:8b,LLM-Generated Original,3,9.727709036,57.63417323,21,364,0,0.5469760939,0.9239712723,1,0.81087,3.0,3.0,5.0,data/llm_m2t_output/Repair_Ticket_llama3.1-8b_prompt3.txt
+Restaurant,gpt-4o-mini,LLM-Generated Original,1,9.133772455,52.4584293,21,161,0,0.7633645389,0.9103778233,0,0.86627,3.0,2.0,3.0,data/llm_m2t_output/Restaurant_gpt-4o-mini_prompt1.txt
+Restaurant,gpt-4o-mini,LLM-Generated Original,2,9.993214286,48.35178571,8,114,0,0.7309105709,0.9791360422,0,0.90467,1.0,1.0,1.0,data/llm_m2t_output/Restaurant_gpt-4o-mini_prompt2.txt
+Restaurant,gpt-4o-mini,LLM-Generated Original,3,9.367818182,48.79839394,15,181,0,0.6911468023,0.9692084434,0,0.88579,3.0,1.0,4.0,data/llm_m2t_output/Restaurant_gpt-4o-mini_prompt3.txt
+Restaurant,llama3.1:8b,LLM-Generated Original,1,8.230465116,59.61972272,22,166,0,0.6302065699,0.8687545643,0,0.79719,3.0,3.0,3.0,data/llm_m2t_output/Restaurant_llama3.1-8b_prompt1.txt
+Restaurant,llama3.1:8b,LLM-Generated Self-Corrected,2,11.89589147,43.81396641,9,172,0,0.5081707055,0.9165215681,1,0.79402,1.0,4.0,1.0,data/llm_m2t_output/Restaurant_llama3.1-8b_prompt2_conflict_fix.txt
+Restaurant,llama3.1:8b,LLM-Generated Original,2,10.43982877,52.71946918,4,76,0,0.7735986872,0.9797564467,1,0.91791,1.0,5.0,1.0,data/llm_m2t_output/Restaurant_llama3.1-8b_prompt2.txt
+Restaurant,llama3.1:8b,LLM-Generated Self-Corrected,3,10.82956693,55.12012467,13,255,0,0.5986163271,0.901516757,1,0.81065,3.0,2.0,3.0,data/llm_m2t_output/Restaurant_llama3.1-8b_prompt3_conflict_fix.txt
+Restaurant,llama3.1:8b,LLM-Generated Original,3,12.58375,52.33958333,6,165,0,0.6823282217,0.9538840244,1,0.87242,3.0,2.0,3.0,data/llm_m2t_output/Restaurant_llama3.1-8b_prompt3.txt
+Test,gpt-4o-mini,LLM-Generated Original,1,4.646212766,78.494,8,44,0,0.4663476406,0.907578993,0,0.77521,3.0,1.0,3.0,data/llm_m2t_output/Test_gpt-4o-mini_prompt1.txt
+Test,gpt-4o-mini,LLM-Generated Original,2,9.01452381,49.13464286,4,42,0,0.2959059604,0.9239384712,0,0.73553,3.0,1.0,3.0,data/llm_m2t_output/Test_gpt-4o-mini_prompt2.txt
+Test,gpt-4o-mini,LLM-Generated Original,3,8.756666667,53.655,4,48,0,0.1836097929,0.9338484763,0,0.70878,3.0,1.0,3.0,data/llm_m2t_output/Test_gpt-4o-mini_prompt3.txt
+Test,llama3.1:8b,LLM-Generated Original,1,10.47141026,54.71942308,4,79,0,0.222057139,0.884586814,0,0.68583,3.0,1.0,3.0,data/llm_m2t_output/Test_llama3.1-8b_prompt1.txt
+Test,llama3.1:8b,LLM-Generated Self-Corrected,2,8.010364146,61.18251167,9,116,0,0.4291249819,0.8844922263,0,0.74788,1.0,1.0,3.0,data/llm_m2t_output/Test_llama3.1-8b_prompt2_conflict_fix.txt
+Test,llama3.1:8b,LLM-Generated Original,2,9.087058824,60.19176471,2,34,0,0.424182533,0.9344537584,1,0.78137,1.0,1.0,1.0,data/llm_m2t_output/Test_llama3.1-8b_prompt2.txt
+Test,llama3.1:8b,LLM-Generated Self-Corrected,3,7.156481481,67.79916667,6,79,0,0.4117351646,0.864635033,1,0.72877,3.0,1.0,4.0,data/llm_m2t_output/Test_llama3.1-8b_prompt3_conflict_fix.txt
+Test,llama3.1:8b,LLM-Generated Original,3,5.031384615,77.51361538,5,52,0,0.3165952786,0.862399558,1,0.69866,3.0,1.0,4.0,data/llm_m2t_output/Test_llama3.1-8b_prompt3.txt
+1_2,gpt-4o-mini,Traditional,0,6.368713661,75.36877636,19,265,1,0.1612750802,0.8203261838,1,0.62261,,,,data/traditional_m2t_output/1_2.df-po-extended.txt
+1_2,llama3.1:8b,Traditional,0,6.368713661,75.36877636,19,265,1,0.1612750802,0.8202892971,1,0.62259,,,,data/traditional_m2t_output/1_2.df-po-extended.txt
+1_3,gpt-4o-mini,Traditional,0,7.041666667,73.7677354,18,283,0,0.2820095095,0.8110998222,1,0.65237,,,,data/traditional_m2t_output/1_3.df-po-extended.txt
+1_3,llama3.1:8b,Traditional,0,7.041666667,73.7677354,18,283,0,0.2820095095,0.8110998222,1,0.65237,,,,data/traditional_m2t_output/1_3.df-po-extended.txt
+10_1,gpt-4o-mini,Traditional,0,6.442857143,75.58714286,7,100,0,0.3277146549,0.8518756246,1,0.69463,,,,data/traditional_m2t_output/10_1.df-po-extended.txt
+10_1,llama3.1:8b,Traditional,0,6.442857143,75.58714286,7,100,0,0.3277146549,0.8518893848,1,0.69464,,,,data/traditional_m2t_output/10_1.df-po-extended.txt
+10_13,gpt-4o-mini,Traditional,0,6.773333333,76.78,3,51,0,0.3549379291,0.8786760534,1,0.72155,,,,data/traditional_m2t_output/10_13.df-po-extended.txt
+10_13,llama3.1:8b,Traditional,0,6.773333333,76.78,3,51,0,0.3549379291,0.878388765,1,0.72135,,,,data/traditional_m2t_output/10_13.df-po-extended.txt
+10_6,gpt-4o-mini,Traditional,0,6.315824176,76.24346154,7,99,0,0.3578426898,0.8439400944,1,0.69811,,,,data/traditional_m2t_output/10_6.df-po-extended.txt
+10_6,llama3.1:8b,Traditional,0,6.315824176,76.24346154,7,99,0,0.3578426898,0.8439400944,1,0.69811,,,,data/traditional_m2t_output/10_6.df-po-extended.txt
+3_3,gpt-4o-mini,Traditional,0,7.02882161,69.73219543,14,190,0,0.3623442239,0.811764199,1,0.67694,,,,data/traditional_m2t_output/3_3.df-po-extended.txt
+3_3,llama3.1:8b,Traditional,0,7.02882161,69.73219543,14,190,0,0.3623442239,0.8117457125,1,0.67693,,,,data/traditional_m2t_output/3_3.df-po-extended.txt
+3_3,llama3.1:8b,Traditional,0,7.02882161,69.73219543,14,190,0,0.3623442239,0.8118430906,1,0.67699,,,,data/traditional_m2t_output/3_3.df-po-extended.txt
+5_2,gpt-4o-mini,Traditional,0,7.493771676,67.01364403,12,166,0,0.1841907359,0.8432022242,1,0.6455,,,,data/traditional_m2t_output/5_2.df-po-extended.txt
+5_2,llama3.1:8b,Traditional,0,7.493771676,67.01364403,12,166,0,0.1841907359,0.8425350093,1,0.64503,,,,data/traditional_m2t_output/5_2.df-po-extended.txt
+Baking,gpt-4o-mini,Traditional,0,6.10011789,76.1973406,27,355,0,0.2224911164,0.8149503099,1,0.63721,,,,data/traditional_m2t_output/Baking.df-po-extended.txt
+Baking,llama3.1:8b,Traditional,0,6.10011789,76.1973406,27,355,0,0.2224911164,0.8150521172,1,0.63728,,,,data/traditional_m2t_output/Baking.df-po-extended.txt
+Cement 1,gpt-4o-mini,Traditional,0,5.632,82.08561538,13,195,0,0.2043599455,0.8262154256,1,0.63966,,,,data/traditional_m2t_output/Cement 1.df-po-extended.txt
+Cement 1,llama3.1:8b,Traditional,0,5.632,82.08561538,13,195,0,0.2043599455,0.8263161774,1,0.63973,,,,data/traditional_m2t_output/Cement 1.df-po-extended.txt
+Cement 2,gpt-4o-mini,Traditional,0,6.612608696,75.06706338,23,335,0,0.2331475559,0.8105030482,1,0.6373,,,,data/traditional_m2t_output/Cement 2.df-po-extended.txt
+Cement 2,llama3.1:8b,Traditional,0,6.612608696,75.06706338,23,335,0,0.2331475559,0.8105030482,1,0.6373,,,,data/traditional_m2t_output/Cement 2.df-po-extended.txt
+Cement 3,gpt-4o-mini,Traditional,0,6.817665541,73.14562642,29,414,0,0.2627624155,0.8178269436,1,0.65131,,,,data/traditional_m2t_output/Cement 3.df-po-extended.txt
+Cement 3,llama3.1:8b,Traditional,0,6.817665541,73.14562642,29,414,0,0.2627624155,0.8178180276,1,0.6513,,,,data/traditional_m2t_output/Cement 3.df-po-extended.txt
+Chess,gpt-4o-mini,Traditional,0,6.571071429,73.71375,56,757,0,0.1555123533,0.8117742105,1,0.6149,,,,data/traditional_m2t_output/Chess.df-po-extended.txt
+Chess,llama3.1:8b,Traditional,0,6.571071429,73.71375,56,757,0,0.1555123533,0.8118312525,1,0.61494,,,,data/traditional_m2t_output/Chess.df-po-extended.txt
+Chickpeas,gpt-4o-mini,Traditional,0,4.3625,90.05697034,4,59,0,0.2094323884,0.8147574229,1,0.63316,,,,data/traditional_m2t_output/Chickpeas.df-po-extended.txt
+Chickpeas,llama3.1:8b,Traditional,0,4.3625,90.05697034,4,59,0,0.2094323884,0.8147574229,1,0.63316,,,,data/traditional_m2t_output/Chickpeas.df-po-extended.txt
+Diamonds,gpt-4o-mini,Traditional,0,6.139441601,77.08396308,21,292,0,0.23379628,0.803227665,1,0.6324,,,,data/traditional_m2t_output/Diamonds.df-po-extended.txt
+Diamonds,llama3.1:8b,Traditional,0,6.139441601,77.08396308,21,292,0,0.23379628,0.8031241661,1,0.63233,,,,data/traditional_m2t_output/Diamonds.df-po-extended.txt
+Experiment Design,gpt-4o-mini,Traditional,0,7.649017254,67.39922731,29,437,0,0.3417389125,0.8929319247,1,0.72757,,,,data/traditional_m2t_output/Experiment Design.df-po-extended.txt
+Experiment Design,llama3.1:8b,Traditional,0,7.649017254,67.39922731,29,437,0,0.3417389125,0.8929986079,1,0.72762,,,,data/traditional_m2t_output/Experiment Design.df-po-extended.txt
+Ice Cream,gpt-4o-mini,Traditional,0,5.880872139,75.92686464,14,175,0,0.1906969358,0.7883992009,1,0.60909,,,,data/traditional_m2t_output/Ice Cream.df-po-extended.txt
+Ice Cream,llama3.1:8b,Traditional,0,5.880872139,75.92686464,14,175,0,0.1906969358,0.788359812,1,0.60906,,,,data/traditional_m2t_output/Ice Cream.df-po-extended.txt
+Log Inspection 1,gpt-4o-mini,Traditional,0,5.972195122,76.58674797,15,193,0,0.265834305,0.8622612211,1,0.68333,,,,data/traditional_m2t_output/Log Inspection 1.df-po-extended.txt
+Log Inspection 1,llama3.1:8b,Traditional,0,5.972195122,76.58674797,15,193,0,0.265834305,0.8622612211,1,0.68333,,,,data/traditional_m2t_output/Log Inspection 1.df-po-extended.txt
+Log Inspection 2,gpt-4o-mini,Traditional,0,6.169515152,75.11809091,22,277,0,0.3110051597,0.8744932983,1,0.70545,,,,data/traditional_m2t_output/Log Inspection 2.df-po-extended.txt
+Log Inspection 2,llama3.1:8b,Traditional,0,6.169515152,75.11809091,22,277,0,0.3110051597,0.8744932983,1,0.70545,,,,data/traditional_m2t_output/Log Inspection 2.df-po-extended.txt
+Ordering Kiosk 1,gpt-4o-mini,Traditional,0,6.162410114,76.05958126,44,586,0,0.1945802266,0.8216479673,1,0.63353,,,,data/traditional_m2t_output/Ordering Kiosk 1.df-po-extended.txt
+Ordering Kiosk 1,llama3.1:8b,Traditional,0,6.162410114,76.05958126,44,586,0,0.1945802266,0.8216479673,1,0.63353,,,,data/traditional_m2t_output/Ordering Kiosk 1.df-po-extended.txt
+Ordering Kiosk 2,gpt-4o-mini,Traditional,0,6.396777494,75.09149233,69,942,0,0.2188039254,0.8306935916,1,0.64713,,,,data/traditional_m2t_output/Ordering Kiosk 2.df-po-extended.txt
+Ordering Kiosk 2,llama3.1:8b,Traditional,0,6.396777494,75.09149233,69,942,0,0.2188039254,0.8306735933,1,0.64711,,,,data/traditional_m2t_output/Ordering Kiosk 2.df-po-extended.txt
+Preflop,gpt-4o-mini,Traditional,0,5.825657873,78.37074035,51,662,0,0.1961095865,0.8336878005,1,0.64241,,,,data/traditional_m2t_output/Preflop.df-po-extended.txt
+Preflop,llama3.1:8b,Traditional,0,5.825657873,78.37074035,51,662,0,0.1961095865,0.8336878005,1,0.64241,,,,data/traditional_m2t_output/Preflop.df-po-extended.txt
+Proofread,gpt-4o-mini,Traditional,0,6.291025641,75.68619658,18,252,0,0.2694924522,0.8736641401,1,0.69241,,,,data/traditional_m2t_output/Proofread.df-po-extended.txt
+Proofread,llama3.1:8b,Traditional,0,6.291025641,75.68619658,18,252,0,0.2694924522,0.8736641401,1,0.69241,,,,data/traditional_m2t_output/Proofread.df-po-extended.txt
+Repair Ticket,gpt-4o-mini,Traditional,0,7.074214876,70.46692837,34,463,0,0.3374843257,0.8770263247,1,0.71516,,,,data/traditional_m2t_output/Repair Ticket.df-po-extended.txt
+Repair Ticket,llama3.1:8b,Traditional,0,7.074214876,70.46692837,34,463,0,0.3374843257,0.8769477736,1,0.71511,,,,data/traditional_m2t_output/Repair Ticket.df-po-extended.txt
+Restaurant,gpt-4o-mini,Traditional,0,7.542332016,68.2465415,23,338,0,0.2859303203,0.832611081,1,0.66861,,,,data/traditional_m2t_output/Restaurant.df-po-extended.txt
+Restaurant,llama3.1:8b,Traditional,0,7.542332016,68.2465415,23,338,0,0.2859303203,0.832611081,1,0.66861,,,,data/traditional_m2t_output/Restaurant.df-po-extended.txt
+Test,gpt-4o-mini,Traditional,0,6.554857143,77.99014286,5,79,0,0.3120792349,0.8330478315,1,0.67676,,,,data/traditional_m2t_output/Test.df-po-extended.txt
+Test,llama3.1:8b,Traditional,0,6.554857143,77.99014286,5,79,0,0.3120792349,0.8328417244,1,0.67661,,,,data/traditional_m2t_output/Test.df-po-extended.txt

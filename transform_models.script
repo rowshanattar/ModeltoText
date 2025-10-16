@@ -1,0 +1,91 @@
+#!/usr/bin/ruby
+require_relative 'lib/cpee/transformation/bpmn2'
+require_relative 'lib/cpee/transformation/mermaid'
+require_relative 'lib/cpee/transformation/graphviz'
+require_relative 'lib/cpee/transformation/transformer'
+require_relative 'lib/cpee/transformation/cpee'
+require_relative 'lib/cpee/transformation/text-df-PO-reduced'
+require_relative 'lib/cpee/transformation/text-df-PO-extended'
+require_relative 'lib/cpee/transformation/text-bf'
+
+# Convert BPMN files to Mermaid format
+bpmn = Dir.glob(File.join(__dir__,'data','**/*.bpmn'))
+
+bpmn.each do |f|
+  puts "---> Converting #{f} to Mermaid"
+  source = CPEE::Transformation::Source::BPMN2.new(File.read(f))
+  trans = CPEE::Transformation::Transformer.new(source)
+  trans.build_traces
+  trans.build_tree
+  mermaid_text = trans.generate_model(CPEE::Transformation::Target::Mermaid)
+
+  # Shorten node IDs but preserve the suffix (e.g., :task, :exclusivegateway)
+  id_map = {}
+  counter = 1
+
+  mermaid_text.gsub!(/\b([\w-]+)(:)(\w+)/) do
+    long_id = $1      # The long node ID
+    colon = $2        # The colon (':')
+    type = $3         # The node type (e.g., task, exclusivegateway)
+
+    short_id = id_map[long_id] ||= "n#{counter}"
+    counter += 1 if id_map[long_id] == short_id
+
+    "#{short_id}#{colon}#{type}"
+  end
+
+  out_dir = File.join(__dir__, 'data', 'mermaid_models')
+  Dir.mkdir(out_dir) unless Dir.exist?(out_dir)
+  out_file = File.join(out_dir, File.basename(f, '.bpmn') + '.mmd')
+  File.write(out_file, mermaid_text)
+end
+
+# Write CPEE trees (CPEE XML models) - use load model in the cpee
+bpmn.each do |f|
+  puts "---> #{f}"
+  source = CPEE::Transformation::Source::BPMN2.new(File.read(f))
+  trans = CPEE::Transformation::Transformer.new(source)
+  trans.build_traces
+  trans.build_tree
+  model = trans.generate_model(CPEE::Transformation::Target::CPEE).to_s
+  # File.write(f.sub(/\.bpmn$/,'.xml'),model)
+end
+
+# Write-Depth First, Pre-Order traversed texts with reduced context (better for small models)
+bpmn.each do |f|
+  source = CPEE::Transformation::Source::BPMN2.new(File.read(f))
+  trans = CPEE::Transformation::Transformer.new(source)
+  trans.build_traces
+  trans.build_tree
+  text = trans.generate_model(CPEE::Transformation::Target::Text_df_PO_reduced)
+  out_dir = File.join(__dir__, 'data', 'traditional_m2t_output')
+  Dir.mkdir(out_dir) unless Dir.exist?(out_dir)
+  out_file = File.join(out_dir, File.basename(f, '.bpmn') + '.df-po-reduced.txt')
+  File.write(out_file, text)
+end
+
+# Write-Depth First, Pre-Order traversed texts with extended context (better for large, nested models)
+bpmn.each do |f|
+  source = CPEE::Transformation::Source::BPMN2.new(File.read(f))
+  trans = CPEE::Transformation::Transformer.new(source)
+  trans.build_traces
+  trans.build_tree
+  text = trans.generate_model(CPEE::Transformation::Target::Text_df_PO_extended)
+  out_dir = File.join(__dir__, 'data', 'traditional_m2t_output')
+  Dir.mkdir(out_dir) unless Dir.exist?(out_dir)
+  out_file = File.join(out_dir, File.basename(f, '.bpmn') + '.df-po-extended.txt')
+  File.write(out_file, text)
+end
+
+# Write-Breadth First traversed texts (not really), with lots of enumerations.
+bpmn.each do |f|
+  source = CPEE::Transformation::Source::BPMN2.new(File.read(f))
+  trans = CPEE::Transformation::Transformer.new(source)
+  trans.build_traces
+  trans.build_tree
+  text = trans.generate_model(CPEE::Transformation::Target::Text_bf)
+  out_dir = File.join(__dir__, 'data', 'traditional_m2t_output')
+  Dir.mkdir(out_dir) unless Dir.exist?(out_dir)
+  out_file = File.join(out_dir, File.basename(f, '.bpmn') + '.bf.txt')
+  File.write(out_file, text)
+end
